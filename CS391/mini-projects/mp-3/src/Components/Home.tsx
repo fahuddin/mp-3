@@ -2,10 +2,11 @@
 import styled from 'styled-components';
 
 const StyledMain = styled.main`
-display: flex;
+    display: flex;
     flex-direction: column;
     width:70%;
     background-color: teal;
+    height:100vh;
 
     img{
        width: 40%;
