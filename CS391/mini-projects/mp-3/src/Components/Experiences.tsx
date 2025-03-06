@@ -1,4 +1,4 @@
-import StyledMain from './/styledcomponents/StyledMain.ts'
+import StyledMain from './styledcomponents/StyledMain'
 
 
 
