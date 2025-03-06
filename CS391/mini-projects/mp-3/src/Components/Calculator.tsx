@@ -1,78 +1,98 @@
 import { useState } from "react";
 
+export default function Calculator() {
+  const [firstNum, setFirstNum] = useState<number>(0);
+  const [secondNum, setSecondNum] = useState<number>(0);
+  const [result, setResult] = useState<string | number>(0);
+  const [error, setError] = useState<boolean>(false);
 
-export default function Calculator(){
+  function errorCheck() {
+    if (isNaN(Number(firstNum)) || isNaN(Number(secondNum))) {
+      setError(true);
+      setResult("Error: Invalid input");
+      return true; // return true if error exists
+    }
+    setError(false);
+    return false; // return false if no error
+  }
 
-const [firstNum, setFirstNum] = useState(0);
-const [secondNum, setSecondNum] = useState(0);
-const [result, setResult] = useState(0);
-const [error, setError] = useState(false);
+  function addition() {
+    if (!errorCheck()) {
+      const res = Number(firstNum) + Number(secondNum);
+      setResult(res);
+    }
+  }
 
-function errorCheck(){
-    if (isNaN(Number(firstNum)) || isNaN(Number(secondNum))){
+  function subtraction() {
+    if (!errorCheck()) {
+      const res = Number(firstNum) - Number(secondNum);
+      setResult(res);
+    }
+  }
+
+  function multiplication() {
+    if (!errorCheck()) {
+      const res = Number(firstNum) * Number(secondNum);
+      setResult(res);
+    }
+  }
+
+  function divide() {
+    if (!errorCheck()) {
+      if (secondNum === 0) {
         setError(true);
+        setResult("Error: Division by zero");
+        return;
+      }
+      const res = Number(firstNum) / Number(secondNum);
+      setResult(res);
     }
+  }
 
-}
-
-function addition(){
-    const res = Number(firstNum) + Number(secondNum);
-    setResult(res);
-}
-
-function subtraction(){
-    const res = Number(firstNum) - Number(secondNum);
-    setResult(res);
-}
-
-function multiplication(){
-    const res = Number(firstNum) * Number(secondNum);
-    setResult(res);
-}
-
-function divide(){
-    const res = Number(firstNum) / Number(secondNum);
-    setResult(res);
-}
-
-function exponent(){
-    const base = Number(firstNum);
-    const exponent = Number(secondNum);
-    let res = 1
-    for (let i = 1; i < exponent; i++ ){
-        res = res * base
-
+  function exponent() {
+    if (!errorCheck()) {
+      const base = Number(firstNum);
+      const exponent = Number(secondNum);
+      let res = 1;
+      for (let i = 0; i < exponent; i++) {
+        res = res * base;
+      }
+      setResult(res);
     }
+  }
 
-    setResult(res);
-}
-
-
-return (
-    <div id = "calculator">
-
-        <div id = "input-section">
-            <div>
-                <label>First Input</label><input value={firstNum}/>
-            </div>
-            <div>
-                <label>Second Input</label><input value={firstNum}/>
-            </div>
+  return (
+    <div id="calculator">
+      <div id="input-section">
+        <div>
+          <label>First Input</label>
+          <input
+            type="number"
+            value={firstNum}
+            onChange={(e) => setFirstNum(Number(e.target.value))}
+          />
         </div>
-        <div id = "button-section">
+        <div>
+          <label>Second Input</label>
+          <input
+            type="number"
+            value={secondNum}
+            onChange={(e) => setSecondNum(Number(e.target.value))}
+          />
+        </div>
+      </div>
+      {error && <div className="error-message">{result}</div>}
+      <div id="button-section">
         <button onClick={addition}>+</button>
         <button onClick={subtraction}>-</button>
         <button onClick={multiplication}>*</button>
         <button onClick={divide}>/</button>
         <button onClick={exponent}>^</button>
-
-        </div>
+      </div>
+      <div id="result">
+        <label>Result: </label>
+        <span>{result}</span>
+      </div>
     </div>
-
-
-)
-
-
-
-
+  );
 }

@@ -1,5 +1,4 @@
 import StyledMain from "./StyledComponents/StyledMain";
-import styled  from "styled-components";
 
 
 
