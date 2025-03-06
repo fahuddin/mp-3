@@ -1,6 +1,13 @@
 import { useState } from "react";
 
+
+
+
+
+
 export default function Calculator() {
+
+
   const [firstNum, setFirstNum] = useState<number>(0);
   const [secondNum, setSecondNum] = useState<number>(0);
   const [result, setResult] = useState<string | number>(0);
@@ -61,38 +68,31 @@ export default function Calculator() {
     }
   }
 
+
   return (
     <div id="calculator">
-      <div id="input-section">
-        <div>
           <label>First Input</label>
           <input
             type="number"
             value={firstNum}
             onChange={(e) => setFirstNum(Number(e.target.value))}
           />
-        </div>
-        <div>
           <label>Second Input</label>
           <input
             type="number"
             value={secondNum}
             onChange={(e) => setSecondNum(Number(e.target.value))}
           />
-        </div>
-      </div>
       {error && <div className="error-message">{result}</div>}
-      <div id="button-section">
         <button onClick={addition}>+</button>
         <button onClick={subtraction}>-</button>
         <button onClick={multiplication}>*</button>
         <button onClick={divide}>/</button>
         <button onClick={exponent}>^</button>
-      </div>
-      <div id="result">
+      <h3 id="result">
         <label>Result: </label>
         <span>{result}</span>
+      </h3>
       </div>
-    </div>
   );
 }

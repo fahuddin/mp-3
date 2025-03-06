@@ -15,10 +15,14 @@ display: flex;
     @media (max-width: 750px){
     width: 100%;
     background-color: purple;
+    height: 100vh;
 
     img {
-     width: 100%;
-    margin: auto;
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
     }
     
     }
@@ -38,6 +42,7 @@ max-width:100%;
 
 const StyledP = styled.p`
 font-size: calc(2px + 2vw);
+padding: 2%;
 
 `;
 

@@ -1,6 +1,6 @@
-import StyledMain from './StyledComponents/StyledMain';
-import StyledTable from './StyledComponents/StyledTable';
-import StyledText from './StyledComponents/StyledText';
+import StyledMain from './styledcomponents/StyledMain';
+import StyledTable from './styledcomponents/StyledTable';
+import StyledText from './styledcomponents/StyledText';
 
 
 

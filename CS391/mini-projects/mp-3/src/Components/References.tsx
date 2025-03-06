@@ -1,4 +1,4 @@
-import StyledMain from "./StyledComponents/StyledMain";
+import StyledMain from "./styledcomponents/StyledMain";
 
 
 

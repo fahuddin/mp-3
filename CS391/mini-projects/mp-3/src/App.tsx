@@ -6,8 +6,8 @@ import Education from './Components/Education';
 import Experiences from './Components/Experiences';
 import Projects from './Components/Projects';
 import Certifications from './Components/Certifications';
-import StyledContainer from './Components/StyledComponents/StyledContainer';
-import StyledWrapper from './Components/StyledComponents/StyledWrapper';
+import StyledContainer from './Components/styledcomponents/StyledContainer';
+import StyledWrapper from './Components/styledcomponents/StyledWrapper';
 import Footer from './Components/Footer';
 import References from './Components/References';
 

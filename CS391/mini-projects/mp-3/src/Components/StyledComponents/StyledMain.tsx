@@ -5,6 +5,7 @@ display: flex;
     flex-direction: column;
     width:70%;
     background-color: teal;
+    padding: 2%;
    
 
 p { font-size: calc(2px + 2vw; 
@@ -32,8 +33,9 @@ h1 {
          display: flex;
         flex-direction: column;
         width:100%;
-        height: 80vh;
+        height: 100vh;
         background-color: purple;
+        padding: 2%;
 
   p {
 
