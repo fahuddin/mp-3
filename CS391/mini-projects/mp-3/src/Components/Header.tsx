@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from 'react';
+
 
 const StyledHeader = styled.header`
     display: flex;

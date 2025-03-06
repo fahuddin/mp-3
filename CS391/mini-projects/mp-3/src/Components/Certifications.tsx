@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import StyledMain from './StyledComponents/StyledMain';
 import StyledTable from './StyledComponents/StyledTable';
 import StyledText from './StyledComponents/StyledText';
