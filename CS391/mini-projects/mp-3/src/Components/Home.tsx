@@ -9,7 +9,7 @@ const StyledMain = styled.main`
     height:100vh;
 
     img{
-       width: 40%;
+    width: 40%;
     margin: 2vh 1vw;
     }
 
@@ -65,7 +65,6 @@ const StyledTitle = styled.h1`
 `
 
 const StyledMainDiv = styled.div`
-
     margin: auto;
     padding: 2%;
 `;
