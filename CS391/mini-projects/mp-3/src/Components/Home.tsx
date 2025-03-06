@@ -79,7 +79,7 @@ export default function Home() {
 
       <StyledMainDiv>
         <div id="main-img">
-          <StyledProfile id="profile" src="/public/src.jpg" alt="Fahim Uddin" />
+          <StyledProfile id="profile" src="/src.jpg"/>
         </div>
         <StyledText>
           <StyledP>
