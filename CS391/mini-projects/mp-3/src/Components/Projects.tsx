@@ -1,8 +1,8 @@
 
-import StyledMain from './/styledcomponents/StyledMain';
-import StyledTable from './/styledcomponents/StyledTable';
-import StyledText from './/styledcomponents/StyledText';
-import Calculator from './/Calculator';
+import StyledMain from './styledcomponents/StyledMain';
+import StyledTable from './styledcomponents/StyledTable';
+import StyledText from './styledcomponents/StyledText';
+import Calculator from './Calculator';
 
 
 

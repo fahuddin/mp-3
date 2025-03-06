@@ -5,8 +5,7 @@ display: flex;
     flex-direction: column;
     width:70%;
     background-color: teal;
-    padding: 2%;
-   
+   padding: 2%;
 
 p { font-size: calc(2px + 2vw; 
     padding: 2%;)
@@ -41,6 +40,7 @@ h1 {
 
   font-size: calc(3px + 1vw);
         margin: 1% 1%;
+
   
   }
 
