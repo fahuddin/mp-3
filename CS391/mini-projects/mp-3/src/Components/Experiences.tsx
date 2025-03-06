@@ -1,4 +1,5 @@
-import StyledMain from './styledcomponents/StyledMain';
+import StyledMain from './/styledcomponents/StyledMain.ts'
+
 
 
 export default function Experiences(){
