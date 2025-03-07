@@ -26,6 +26,12 @@ h1 {
     color: black;
 
 }
+    li{
+      padding: 2%;
+      font-size: calc(1px + 1vw);
+      font-weight: bold;
+    
+    }
     
 
 @media (max-width: 750px){

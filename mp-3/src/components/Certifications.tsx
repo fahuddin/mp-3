@@ -30,6 +30,30 @@ return(
                             <td>Data Science Foundations Fundamentals</td>
                             <td>2023</td>
                         </tr>
+                        <tr>
+                            <td>Google Data Science Certificate 2024</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Feature Engineering Datacamp 2024</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Data Science Datacamp 2024</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Data Exploration Udemy 2025</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analyst Udemy 2025</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analyst and Science Coursera 2025</td>
+                            <td>2025</td>
+                        </tr>
             </StyledText>
             </StyledTable>
          
