@@ -153,7 +153,7 @@ export default function Calculator() {
         <button onClick={clear}>Clear</button>
       <h3 id="result">
         <label>Result: </label>
-        <span>{result}</span>
+        <span style={{color: Number(result) < 0 ? 'red' : 'black'}}>{result}</span>
       </h3>
       </StyledCalculator>
   );
