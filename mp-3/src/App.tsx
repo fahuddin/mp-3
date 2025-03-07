@@ -21,6 +21,7 @@ import { useLocation } from "react-router-dom";
 function Root() {
   const location = useLocation();
     const path = location.pathname;
+    useEffect(()=>{
     if (path === "/") {
       document.title = 'Home'
     } else if (path === "/education") {
@@ -33,7 +34,7 @@ function Root() {
       document.title = "My Certifications";
     } else if (path === "/references") {
       document.title = "My References";
-    }
+    }},[path])
   return (
     <>
       <Nav />
