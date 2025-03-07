@@ -23,8 +23,8 @@ export default function Header(){
 
     return (
         <StyledHeader>
-         <h1>Fahim Uddin</h1>
-         <p>My 2025 Resume</p>
+            <h1>Fahim Uddin</h1>
+            <p>My 2025 Resume</p>
         </StyledHeader>
             
     );

@@ -9,7 +9,7 @@ export default function Certifications(){
 return(
     <StyledMain>
         <StyledTable>
-        <StyledText>
+            <StyledText>
         
             
         <h1>Certifications</h1>
@@ -54,7 +54,7 @@ return(
                             <td>Data Analyst and Science Coursera 2025</td>
                             <td>2025</td>
                         </tr>
-            </StyledText>
+                </StyledText>
             </StyledTable>
          
 

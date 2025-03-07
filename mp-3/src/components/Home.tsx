@@ -94,9 +94,9 @@ export default function Home() {
           </StyledText>
           </StyledMainDiv>
 
-      <StyledP>
-        Welcome to my resume website.
-    </StyledP>
-      </StyledMain>
+          <StyledP>
+          Welcome to my resume website.
+          </StyledP>
+    </StyledMain>
   );
 }

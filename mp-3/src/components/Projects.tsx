@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Calculator from './Calculator';
 
-// StyledMain (equivalent to main in CSS)
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
@@ -51,7 +50,6 @@ const StyledMain = styled.main`
   }
 `;
 
-// StyledTable (equivalent to table in CSS)
 const StyledTable = styled.table`
   width: 100%;
 
@@ -80,7 +78,6 @@ const StyledTable = styled.table`
   }
 `;
 
-// StyledCalculator (for the calculator div, not present in your TSX yet but included in HTML)
 
 export default function Projects() {
   return (
@@ -108,7 +105,6 @@ export default function Projects() {
           </StyledTable>
         </div>
       </div>
-      {/* Assuming Calculator component handles its own styling or you might want to wrap it */}
      <Calculator/>
     </StyledMain>
   );

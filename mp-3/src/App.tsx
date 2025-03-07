@@ -15,23 +15,27 @@ import { useLocation } from 'react-router-dom';
 
   function Root(){
     const location = useLocation(); 
-
-  useEffect(() => {
     const path = location.pathname;
+  useEffect(() =>    { 
     if (path === '/') {
       document.title = "Home - My Resume";
-    } else if (path === '/education') {
+    } 
+    else if (path === '/education') {
       document.title = "Education - My Education";
-    } else if (path === '/experiences') {
+    } 
+    else if (path === '/experiences') {
       document.title = "Experiences - My Experiences";
-    } else if (path === '/projects') {
+    } 
+    else if (path === '/projects') {
       document.title = "Projects - My Projects";
-    } else if (path === '/certifications') {
+    } 
+    else if (path === '/certifications') {
       document.title = "Certifications - My Certifications";
-    } else if (path === '/references') {
+    } 
+    else if (path === '/references') {
       document.title = "References - My References";
     }
-  }, [location]);
+  }, []);
     return (
       <>
       <Nav/>
